@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Locksite - Welcome</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" media="all"
+          href="css/style.css" data-th-href="@{/css/style.css}" />
+</head>
+
+<h2>Welcome to our grocery store!</h2>
+<h3>Please enter your 8-digit, secret password</h3>
+
+<form action="LoginServlet">
+
+    <p data-th-text="'Time on the server is ' + ${theDate}" class="time"></p>
+
+    Please enter your username<br>
+    <input type="text" name="un"/><br>
+
+    Please enter your password<br>
+    <input type="password" name="password"/>
+    <br><br>
+    <input type="submit" value="Get Access">
+
+</form>
+
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Welcome - admin homepage</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" media="all"
+          href="css/style.css" data-th-href="@{/css/style.css}" />
+</head>
+<body>
+    <div class="container">
+
+        <a data-th-href="@{/showAllCodes}" class="btn btn-primary btn-sm mb-3">List of all access Code</a>
+        <a data-th-href="@{/addPost}" class="btn btn-primary btn-sm mb-3">Add new post</a>
+        <a data-th-href="@{/logout}" class="btn btn-primary btn-sm mb-3">Logout</a>
+
+        <table class="table table-bordered table stripped">
+            <thead data-th-each="tmp : ${forum}">
+                <th>#</th>
+                <th>Post</th>
+                <th>Date</th>
+                <th>Author</th>
+            </thead>
+            <tbody data-th-href="">
+                <td data-th-href="${tmp.id"></td>
+                <td data-th-href="${tmp.postName}"></td>
+                <td data-th-href="${tmp.postDate}"></td>
+                <td data-th-href="${tmp.postAuthor"></td>
+            </tbody>
+        </table>
+
+    </div>
+
+</body>
+</html>

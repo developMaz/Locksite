@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <title>Locksite - List of access codes</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" media="all"
+          href="css/style.css" data-th-href="@{/css/style.css}"/>
+    <link rel="stylesheet" href="/css/bootstrap/css/bootstrap.min.css"/>
+</head>
+<body>
+    <div class="container">
+        <h3>List of All Codes</h3>
+        <hr>
+        <a data-th-href="@{/generateCode}" class="btn btn-primary btn-sm mb-3">Generate Code</a>
+        <table class="table table-bordered table stripped">
+            <thead class="thead-dark">
+                <th>Code</th>
+                <th colspan="2">Comment</th>
+                <th>Delete</th>
+            </thead>
+            <tbody>
+                <tr data-th-each="tmp : ${codes}">
+                    <td data-th-text="${tmp.accessCode}"></td>
+                    <td data-th-text="${tmp.comment}"></td>
+                    <td><a data-th-href="@{/updateCommentForm(id=${tmp.id})}" class="btn btn-primary btn-sm">Edit</a></td>
+                    <td>
+                        <a data-th-href="@{/deleteCodeForm(id=${tmp.id})}" class="btn btn-danger btn-sm"
+                        onclick="if (!(confirm('Are you really sure you want to delete access code?'))) return false">
+                        Delete code
+                        </a>
+                    </td>
+
+                </tr>
+            </tbody>
+        </table>
+
+        <p>* Codes generated automatically and sorted</p>
+        <p>* Edit method change only comment </p>
+        <p>* Delete code erasing whole entity</p>
+
+
+
+    </div>
+</body>
+</html>
