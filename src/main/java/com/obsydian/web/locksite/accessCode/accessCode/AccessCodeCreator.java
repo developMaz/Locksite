@@ -1,6 +1,6 @@
-package com.obsydian.web.locksite.domain.code;
+package com.obsydian.web.locksite.code.code;
 
-import com.obsydian.web.locksite.dto.CodeDTO;
+import com.obsydian.web.locksite.code.dto.CodeDTO;
 
 import lombok.NoArgsConstructor;
 

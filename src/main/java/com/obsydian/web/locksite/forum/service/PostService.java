@@ -1,7 +1,7 @@
-package com.obsydian.web.locksite.service;
+package com.obsydian.web.locksite.forum.service;
 
-import com.obsydian.web.locksite.domain.forum.Post;
-import com.obsydian.web.locksite.repository.ForumRepository;
+import com.obsydian.web.locksite.forum.domain.forum.Post;
+import com.obsydian.web.locksite.forum.repository.PostRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -9,10 +9,10 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
-public class ForumService {
+public class PostService {
 
 	@Autowired
-	private ForumRepository forumRepository;
+	private PostRepository forumRepository;
 
 	public Post save(final Post post) {
 		return forumRepository.save(post);

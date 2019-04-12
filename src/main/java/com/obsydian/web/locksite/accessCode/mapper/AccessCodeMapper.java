@@ -1,14 +1,14 @@
-package com.obsydian.web.locksite.mapper;
+package com.obsydian.web.locksite.code.mapper;
 
-import com.obsydian.web.locksite.domain.code.Code;
-import com.obsydian.web.locksite.dto.CodeDTO;
+import com.obsydian.web.locksite.code.code.Code;
+import com.obsydian.web.locksite.code.dto.CodeDTO;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
 @Component
-public class DatabaseMapper {
+public class CodeMapper {
 
 
 	public Code mapToCode (final CodeDTO codeDTO){

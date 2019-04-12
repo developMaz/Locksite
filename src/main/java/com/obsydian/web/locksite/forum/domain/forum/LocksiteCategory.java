@@ -1,10 +1,10 @@
-package com.obsydian.web.locksite.domain.forum;
+package com.obsydian.web.locksite.forum.domain.forum;
 
 import java.util.List;
 
-public class LocksiteForum extends Forum {
+public class LocksiteCategory extends Category {
 
-	public LocksiteForum(int id, String categoryName, List<Post> postsList) {
+	public LocksiteCategory(int id, String categoryName, List<Post> postsList) {
 		super(id, categoryName, postsList);
 	}
 }

@@ -7,10 +7,10 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
-public class UserRepository {
+public class UserService {
 
 	@Autowired
-	private UserRepository userRepository;
+	private UserService userRepository;
 
 	public User save(final User user){
 		return userRepository.save(user);

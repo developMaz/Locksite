@@ -1,6 +1,6 @@
-package com.obsydian.web.locksite.domain.forum;
+package com.obsydian.web.locksite.forum.domain.forum;
 
-import com.obsydian.web.locksite.domain.user.User;
+import com.obsydian.web.locksite.forum.domain.user.User;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
@@ -36,7 +36,7 @@ public class Post {
 
 	@ManyToOne
 	@JoinColumn(name = "FORUM_CATEGORY_ID")
-	private Forum forum;
+	private Category forum;
 
 
 	public Post(int id, String postName, User author, Date createDate, Date updateDate) {

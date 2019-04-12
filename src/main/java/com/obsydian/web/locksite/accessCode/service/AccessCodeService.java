@@ -1,7 +1,7 @@
-package com.obsydian.web.locksite.service;
+package com.obsydian.web.locksite.code.service;
 
-import com.obsydian.web.locksite.domain.code.Code;
-import com.obsydian.web.locksite.repository.CodeRepository;
+import com.obsydian.web.locksite.code.code.Code;
+import com.obsydian.web.locksite.code.repository.CodeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
-public class DatabaseService {
+public class CodeService {
 
 	@Autowired
 	private CodeRepository codeRepository;

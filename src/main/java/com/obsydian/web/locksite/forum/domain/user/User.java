@@ -1,4 +1,4 @@
-package com.obsydian.web.locksite.domain.user;
+package com.obsydian.web.locksite.forum.domain.user;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

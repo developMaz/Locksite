@@ -1,6 +1,6 @@
-package com.obsydian.web.locksite.repository;
+package com.obsydian.web.locksite.code.repository;
 
-import com.obsydian.web.locksite.domain.code.Code;
+import com.obsydian.web.locksite.code.code.Code;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 

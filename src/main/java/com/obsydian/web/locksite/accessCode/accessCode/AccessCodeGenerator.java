@@ -1,4 +1,4 @@
-package com.obsydian.web.locksite.domain.code;
+package com.obsydian.web.locksite.code.code;
 
 import java.util.ArrayList;
 import java.util.List;

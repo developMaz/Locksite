@@ -1,10 +1,11 @@
 package com.obsydian.web.locksite.controller;
 
-import com.obsydian.web.locksite.domain.code.CodeCreator;
-import com.obsydian.web.locksite.dto.CodeDTO;
-import com.obsydian.web.locksite.exceptions.CodeNotFoundException;
-import com.obsydian.web.locksite.mapper.DatabaseMapper;
-import com.obsydian.web.locksite.service.DatabaseService;
+import com.obsydian.web.locksite.code.code.CodeCreator;
+import com.obsydian.web.locksite.code.controller.CodeController;
+import com.obsydian.web.locksite.code.dto.CodeDTO;
+import com.obsydian.web.locksite.code.exceptions.CodeNotFoundException;
+import com.obsydian.web.locksite.code.mapper.CodeMapper;
+import com.obsydian.web.locksite.code.service.CodeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -16,13 +17,13 @@ import org.springframework.web.bind.annotation.*;
 public class LocksiteController {
 
 	@Autowired
-	DatabaseController databaseController;
+	private CodeController databaseController;
 
 	@Autowired
-	DatabaseService databaseService;
+	private CodeService databaseService;
 
 	@Autowired
-	DatabaseMapper databaseMapper;
+	private CodeMapper databaseMapper;
 
 	@RequestMapping("/")
 	public String showIndex(Model theModel){

@@ -1,4 +1,4 @@
 package com.obsydian.web.locksite.forum.exceptions;
 
-public class CategoryNotFoundException {
+public class CategoryNotFoundException extends Exception {
 }

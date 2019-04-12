@@ -1,4 +1,4 @@
 package com.obsydian.web.locksite.forum.exceptions;
 
-public class PostNotFoundException {
+public class PostNotFoundException extends Exception {
 }

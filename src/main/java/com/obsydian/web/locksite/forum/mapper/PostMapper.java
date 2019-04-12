@@ -1,21 +1,21 @@
-package com.obsydian.web.locksite.mapper;
+package com.obsydian.web.locksite.forum.mapper;
 
-import com.obsydian.web.locksite.domain.forum.Post;
-import com.obsydian.web.locksite.dto.PostDTO;
+import com.obsydian.web.locksite.forum.domain.forum.Post;
+import com.obsydian.web.locksite.forum.dto.PostDTO;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
 @Component
-public class ForumMapper {
+public class PostMapper {
 
 	public Post mapToPost(final PostDTO postDTO){
 		return new Post(postDTO.getId(), postDTO.getPostName(), postDTO.getAuthor(),
 					postDTO.getCreateDate(), postDTO.getUpdateDate());
 	}
 
-	public PostDTO mapToPosDTO(final Post post){
+	public PostDTO mapToPostDTO(final Post post){
 		return new PostDTO(post.getId(), post.getPostName(), post.getAuthor(),
 						post.getCreateDate(), post.getUpdateDate());
 	}
@@ -31,4 +31,5 @@ public class ForumMapper {
 				.map(p -> new PostDTO(p.getId(), p.getPostName(), p.getAuthor(), p.getCreateDate(), p.getUpdateDate()))
 				.collect(Collectors.toList());
 	}
+
 }

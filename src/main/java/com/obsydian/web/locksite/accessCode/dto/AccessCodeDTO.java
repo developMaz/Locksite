@@ -1,4 +1,4 @@
-package com.obsydian.web.locksite.dto;
+package com.obsydian.web.locksite.code.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

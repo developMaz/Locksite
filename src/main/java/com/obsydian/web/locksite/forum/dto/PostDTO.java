@@ -1,6 +1,6 @@
-package com.obsydian.web.locksite.dto;
+package com.obsydian.web.locksite.forum.dto;
 
-import com.obsydian.web.locksite.domain.user.User;
+import com.obsydian.web.locksite.forum.domain.user.User;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 

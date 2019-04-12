@@ -1,7 +1,6 @@
-package com.obsydian.web.locksite.repository;
+package com.obsydian.web.locksite.forum.repository;
 
-import com.obsydian.web.locksite.domain.forum.Post;
-import com.obsydian.web.locksite.domain.user.User;
+import com.obsydian.web.locksite.forum.domain.user.User;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 

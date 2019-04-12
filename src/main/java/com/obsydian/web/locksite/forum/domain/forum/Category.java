@@ -1,4 +1,4 @@
-package com.obsydian.web.locksite.domain.forum;
+package com.obsydian.web.locksite.forum.domain.forum;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -14,7 +14,7 @@ import java.util.List;
 @Setter
 @DynamicUpdate
 @AllArgsConstructor
-public class Forum {
+public class Category {
 
 	@Id
 	@Column(name = "ID", updatable = false)
